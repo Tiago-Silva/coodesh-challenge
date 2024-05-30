@@ -2,7 +2,6 @@ package com.example;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Random;
 
 /**
@@ -28,9 +27,8 @@ public class TASK3 {
         TASK3 task3 = new TASK3();
         ArrayList<String> list = new ArrayList<>();
         HashSet<String> hashSet = task3.createHashSet(list);
-        Iterator<String> iterator = hashSet.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+        for (String s : hashSet) {
+            System.out.println(s);
         }
         System.out.println("Quantidade de itens distintos: " + hashSet.size());
     }

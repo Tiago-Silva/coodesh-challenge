@@ -12,18 +12,17 @@ public class TASK1Test {
     }
 
     @Test
-    public void testIsPalindromeSuccess() throws Exception {
+    public void testIsPalindromeSuccess() {
         assertTrue(TASK1.isPalindrome("arara"));
     }
 
     @Test
-    public void testIsPalindromeError() throws Exception {
+    public void testIsPalindromeError() {
         assertFalse(TASK1.isPalindrome("senhoras"));
     }
 
     @Test
     public void testDefaultArgument() {
-        // Passing no arguments should work.
         String[] args = {};
         TASK1.main(args);
     }
