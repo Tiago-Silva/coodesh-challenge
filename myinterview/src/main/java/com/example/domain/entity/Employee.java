@@ -39,7 +39,7 @@ public class Employee implements Serializable {
     public Employee(EmployeeDB employeeDB) {
         this.empNo = employeeDB.getEmpNo();
         this.birthDate = employeeDB.getBirthDate();
-        this.firstName = employeeDB.getFirstName();;
+        this.firstName = employeeDB.getFirstName();
         this.lastName = employeeDB.getLastName();
         this.gender = employeeDB.getGender();
         this.hireDate = employeeDB.getHireDate();
