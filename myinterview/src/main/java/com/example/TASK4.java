@@ -7,6 +7,7 @@ import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.PutObjectRequest;
+import io.github.cdimascio.dotenv.Dotenv;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -96,11 +97,6 @@ public class TASK4 {
     }
 
     public static String saveFileToS3(String fileName, File file) {
-//        AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
-//            .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
-//            .withRegion(Regions.US_WEST_2)
-//            .build();
-//        s3Client.putObject(new PutObjectRequest(BUCKET_NAME, fileName, file));
         try {
             s3.putObject(new PutObjectRequest(BUCKET_NAME, fileName, file));
         } catch (AmazonServiceException e) {
@@ -110,10 +106,6 @@ public class TASK4 {
         return fileName;
     }
     public static boolean isFileInS3(String objectName) {
-//        AmazonS3 s3Client = AmazonS3ClientBuilder.standard()
-//            .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
-//            .withRegion(Regions.US_WEST_2)
-//            .build();
         return s3.doesObjectExist(BUCKET_NAME, objectName);
     }
 }
