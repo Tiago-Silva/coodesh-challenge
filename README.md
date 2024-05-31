@@ -1,37 +1,59 @@
-## README
+# Coodesh - challenge - clean architecture
+API criada para o desafio da [Coodesh](https://coodesh.com/)
 
+## 🚀 Motivaçao / objetivo
 
-## What is this repository for?
-1. This repository contains some code. It might be compiling or not :)
+Criar uma API para o desafio da [Coodesh](https://coodesh.com/), onde o objetivo é criar uma API. Eu decidi usar clean architecture para desenvolver a API.
 
-### Before you start
+## 💻 Requisitos
 
-- The project must use the specific language in the assessment. For example: Python, R, Scala, and others;
-- Consider the assessment deadline starting from the beginning of the test. If you have been invited to take the test and cannot complete it within this period, notify the person who invited you to receive instructions on what to do.
-- Document the entire investigation process for the development of the activity (README.md in your repository); the results of these tasks are as important as your thought process and decisions as you complete them, so try to document and present your hypotheses and decisions as much as possible.
+Antes de iniciar, você deve atualizar (baixar) as dependências do maven.
 
-## Contribution guidelines and Tips
+## 🚀 Instalando
 
-1. All tips and contributions are welcome. But be aware that existing errors might not be an accident. We would appreciate if you let us know anything that you realize during the exam. We expect that and it could raise your interview evaluation up.
+Primeiro, você deve clonar o projeto na sua máquina, para isso você
+pode colar o seguinte comando em seu terminal
 
-## Repository README
+```bash
+git clone https://github.com/Tiago-Silva/coodesh-challenge.git
+```
+Para instalar as dependências, execute o seguinte comando:
 
-- Should contain the project title
-- A project description in a sentence
-- Must include a list of languages, frameworks, and/or technologies used
-- How to install and use the project (instructions)
-- Don't forget the [.gitignore](https://www.toptal.com/developers/gitignore)
-- If you are using a personal GitHub, reference that it is a challenge by Coodesh:
+```bash
+mvn clean install
+```
 
-> This is a challenge by [Coodesh](https://coodesh.com/)
+Por fim, para executar o projeto basta rodar o seguinte:
 
-## Finalization and Presentation Instructions
+```bash
+o arquvivo MyinterviewApplication.java
+```
 
-1. Add the link to the repository with your solution to the test
-2. Add the link to the presentation of your project in the README.md.
-3. Check if the README is good and make the final commit in your repository;
-4. Send and await instructions to proceed. Success and good luck. =)
+### Features
 
-## Support
+Tecnologias usadas nesse projeto:
 
-Use [our community](https://discord.gg/rdXbEvjsWu) to ask questions about the process or send a message directly to a specialist in the platform chat.
+<!-- Ícones de tecnologias. Você pode encontrar esses ícones em sites como https://simpleicons.org/ -->
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,linux,java,spring,mysql,aws" />
+  </a>
+</p>
+
+## 📝 Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para obter mais informações.
+
+# Análisando o relatório
+<h1 align="center">
+    <img src="myinterview/public/tela.png" width="600"/>
+</h1>
+
+O gráfico mostra informações de um servidor.
+1) Mostra uso de memória e CPU
+2) Quantidade de logins nos últimos 20 minutos
+3) Quantidade de requests por período de tempo
+4) Páginas carregadas completamente pelos clientes ou do lado do cliente
+
+# Um pouco sobre
+Sou apaixonado por tecnologia. Já cursei engenharia da computação (dois anos e meio), mas, por motivos pessoais eu tive que trancar o curso. No momento estou cursando engenharia de software
